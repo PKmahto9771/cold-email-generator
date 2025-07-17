@@ -54,7 +54,8 @@ st.markdown("""
 user_agent = os.getenv("USER_AGENT", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36")
 os.environ["USER_AGENT"] = user_agent
 
-# api_key = os.getenv("GROQ_API_KEY")Initialize session state
+# Initialize session state
+api_key = os.getenv("GROQ_API_KEY")
 if 'generated_email' not in st.session_state:
     st.session_state.generated_email = None
 if 'job_data' not in st.session_state:
@@ -79,7 +80,7 @@ def initialize_llm():
 def initialize_chroma():
     """Initialize ChromaDB and load portfolios"""
     try:
-        df = pd.read_csv("app/resources/portfolios.csv")
+        df = pd.read_csv("resources/portfolios.csv")
         chroma_client = chromadb.PersistentClient()
         collection = chroma_client.create_collection(name="portfolio", get_or_create=True)
         
@@ -187,7 +188,7 @@ def main():
         # Portfolio preview
         st.markdown('<h3 class="sub-header">📁 Portfolio Skills</h3>', unsafe_allow_html=True)
         try:
-            df = pd.read_csv("app/resources/portfolios.csv")
+            df = pd.read_csv("resources/portfolios.csv")
             st.dataframe(df, use_container_width=True)
         except Exception as e:
             st.error(f"Could not load portfolios: {str(e)}")
