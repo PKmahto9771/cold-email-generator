@@ -29,7 +29,7 @@ A powerful AI-driven Streamlit application that generates personalized cold emai
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
+git clone https://github.com/PKmahto9771/cold-email-generator.git
 cd cold-email-generator-tool
 ```
 

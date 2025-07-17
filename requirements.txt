@@ -6,3 +6,4 @@ pandas
 chromadb
 selenium
 uuid
+python-dotenv
