@@ -7,3 +7,4 @@ chromadb
 selenium
 uuid
 python-dotenv
+pysqlite3-binary
