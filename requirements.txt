@@ -8,3 +8,4 @@ selenium
 uuid
 python-dotenv
 pysqlite3-binary
+beautifulsoup4
