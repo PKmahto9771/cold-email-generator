@@ -147,23 +147,20 @@ def generate_email(job_data, portfolio_links):
             {job_description}
 
             ### INSTRUCTION:
-            You are Mohan, a Business Development Executive at AtliQ Technologies. 
-            AtliQ is a fast-growing AI and Software Solutions company focused on 
-            enabling digital transformation for businesses across industries. We specialize 
-            in building intelligent, scalable, and secure software solutions that streamline 
-            operations, enhance productivity, and deliver measurable business outcomes.
+            You are a job seeker, an aspiring candidate applying for this role. 
+            Write a professional, concise, and personalized email to the recruiter/hiring manager 
+            regarding the job mentioned above. 
 
-            Your task is to write a professional, concise, and personalized cold email 
-            to the client regarding the job mentioned above. Clearly convey how AtliQ is 
-            well-positioned to fulfill their technical and business needs based on the job 
-            requirements.
+            - Express genuine interest in the position.  
+            - Highlight your most relevant skills, experiences, and projects that align 
+            with the requirements.  
+            - Showcase enthusiasm for the company’s mission/industry and explain how your 
+            background makes you a strong fit.  
+            - Keep the tone confident yet polite, and avoid sounding generic or pushy.  
+            - If portfolio links or GitHub/LinkedIn profiles are provided, naturally 
+            incorporate them to strengthen credibility, (not more than 5 portfolios): {link_list}  
 
-            Use confident but non-pushy language. Highlight relevant experience, technical 
-            capabilities, and past work. Incorporate the most relevant items from the 
-            following portfolio links to demonstrate AtliQ's credibility and alignment with 
-            the client's goals: {link_list}
-
-            Sign off as Mohan, BDE at AtliQ.
+            Sign off with Pran Kishor Mahto and prankishor@gmail.com.
 
             ### EMAIL (NO PREAMBLE, NO MARKDOWN)
             """
